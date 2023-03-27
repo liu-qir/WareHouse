@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>带序号的新闻列表效果</title>
+    <style type="text/css">
+        body,
+        h3,
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .news {
+            width: 360px;
+            /* height: 400px;*/
+            /*background-color: blueviolet;*/
+            margin: 50px auto 0px;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        
+        .news h3 {
+            /* border: 1px solid rebeccapurple;*/
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .news ul {
+            /* border: 1px solid #000; */
+            list-style: none; //去掉默认的圆点
+        }
+        
+        .news ul li {
+            border-bottom: 1px dotted #ddd;
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+        }
+        
+        .news ul li a {
+            color: #333;
+            text-decoration: none; //去掉下划线 
+        }
+        
+        .news ul li a:hover {
+            color: red;
+        }
+        
+        .news ul li a span {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .col1 {
+            color: red;
+        }
+        
+        .col2 {
+            color: rgb(235, 134, 134);
+        }
+        
+        .col3 {
+            color: #f3bd4a;
+        }
+        
+        .col4 {
+            color: #f3bd4a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news">
+        <h3>百度新闻热榜</h3>
+        <ul>
+            <li><a href=""><span class="col1">1</span>全国人代会第二次全体会议热</a></li>
+            <li><a href=""><span class="col2">2</span>美官员承认美国在乌生物实验室有料</a></li>
+            <li><a href=""><span class="col3">3</span>组关键词读懂“两高”报告热</a></li>
+            <li><a href=""><span class="col4">4</span>建议独生子女父母退休金上调10-20%新</a></li>
+            <li><a href=""><span>5</span>昨日新增本土确诊233例无症状322例热</a></li>
+            <li><a href=""><span>6</span>陕西新增10例本土确诊病例新</a></li>
+            <li><a href=""><span>7</span>新冠或致大脑萎缩使人提前老10岁</a></li>
+            <li><a href=""><span>8</span>代表: 45岁退休利于减少晚婚晚育</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
