@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示效果</title>
+    <style type="text/css">
+        body,
+        p,
+        h3 {
+            margin: 0px;
+        }
+        
+        a {
+            text-decoration: none; //去掉下划线
+            display: block; //转换为块级元素
+        }
+        
+        .product {
+            width: 268px;
+            /*background-color: aqua;*/
+            margin: 50px auto 0px;
+            /*上  左右 下*/
+            border: 1px solid #ddd;
+            text-align: center; //水平居中
+        }
+        
+        .product,
+        p.describe {
+            /*border: 1px solid red;*/
+            color: #845f3f;
+            font-size: 16px;
+        }
+        
+        .product .product-text {
+            background-color: #f8f8f8;
+            margin-top: 20px;
+            padding: 15px; //内边距
+        }
+        
+        .product .product-text .product-mark {
+            font-size: 0px; //去掉图片空隙
+        }
+        
+        .product .product-text .product-mark {
+            margin: 0px 2px;
+        }
+        
+        .product .product-text h3 {
+            font-size: 20px;
+            font-weight: 400;
+            /*border: 1px solid red;*/
+            margin-top: 15px;
+            color: #000;
+        }
+        
+        .product,
+        .product-text p {
+            color: #a92112;
+            font-size: 20px;
+            /margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <a href="http://www.icodingedu.com" target="_blank">
+            <img src="images/kettle.png" alt="水壶" width="195px">
+            <p class="decribe">快速煮水，安心饮用</p>
+            <div class="product-text">
+                <div class="product-mark">
+                    <img src="images/live.png" alt="直播中" height="20">
+                    <img src="images/odds.png" alt="直播中" height="20">
+                    <img src="images/30day.png" alt="直播中" height="20">
+                    <img src="images/server.png" alt="直播中" height="20">
+                </div>
+                <h3>云米电水壶</h3>
+                <p>￥59</p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
