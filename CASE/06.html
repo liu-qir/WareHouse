@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用的选项卡菜单效果</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        
+        .tab {
+            width: 800px;
+            /* height: 50px; */
+            background-color: #f7f7f7;
+            border-radius: 50px;
+            margin: 50px auto 0px;
+            font-size: 0px;
+            /* 消除间隙 */
+            text-align: center;
+            padding: 5px 0px;
+        }
+        
+        .tab span {
+            /* border: 1px solid red; */
+            height: 40px;
+            display: inline-block;
+            padding: 0px 40px;
+            line-height: 40px;
+            font-size: 16px;
+            border-radius: 50px;
+        }
+        
+        .tab span i {
+            width: 26px;
+            height: 25px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            background-image: url(images/icon.png);
+            vertical-align: middle;
+            /* 在垂直方向垂直居中，只针对行内块级元素 */
+            margin-right: 5px;
+        }
+        
+        .tab span i.icon1 {
+            background-image: url(images/icon.png);
+        }
+        
+        .tab span i.icon2 {
+            /* background-image: url(images/icon.png ); */
+            background-position: -26px 0px;
+            /* 通过设置图片移动的方式来控制不同样式 */
+        }
+        
+        .tab span i.icon3 {
+            /* background-image: url(images/icon.png -52px 0px); */
+            background-position: -52px 0px;
+        }
+        
+        .tab span i.icon4 {
+            /* background-image: url(images/icon.png -78px 0px); */
+            background-position: -78px 0px;
+        }
+        
+        .tab span i.icon5 {
+            /* background-image: url(images/icon.png -104px 0px); */
+            background-position: -104px 0px;
+        }
+        
+        .tab span.current {
+            background-color: #fe94a9;
+            color: #f7f7f7;
+        }
+        
+        .tab span.current i.icon1 {
+            background-position: 0px -26px;
+        }
+        
+        .tab span.current i.icon2 {
+            background-position: -26px -26px;
+        }
+        
+        .tab span.current i.icon3 {
+            background-position: -52px -26px;
+        }
+        
+        .tab span.current i.icon4 {
+            background-position: -78px -26px;
+        }
+        
+        .tab span.current i.icon5 {
+            background-position: -104px -26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <span class="current"><i class="icon1"></i>备孕期间</span>
+        <span><i class="icon2"></i>怀孕</span>
+        <span><i class="icon3"></i>0-1岁</span>
+        <span><i class="icon4"></i>1-2岁</span>
+        <span><i class="icon5"></i>2-3岁</span>
+    </div>
+</body>
+
+</html>
+<!-- 
+      1、display元素类型转换
+      2、vertical-align样式
+      3、css精灵图技术
+      4、padding的灵活运用
+      5、行内块级元素产生的空隙消除技术   
+-->
