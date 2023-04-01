@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酷狗音乐精选歌单效果</title>
+    <style>
+        body,
+        p,
+        h3 {
+            margin: 0;
+        }
+        
+        .music {
+            width: 480px;
+            height: 480px;
+            background-color: aqua;
+            margin: 50px auto 0px;
+        }
+        
+        .music a {
+            width: 480px;
+            height: 480px;
+            display: block;
+            position: relative;
+            /* 相对定位的元素 */
+        }
+        
+        .music p.music-number {
+            /* border: 1px solid #000; */
+            height: 35px;
+            width: 200px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+            /* 设置渐变效果 */
+        }
+        
+        .music p.music-number span.icon-earphone {
+            width: 35px;
+            height: 35px;
+            /* border: 1px solid red; */
+            /* display: inline-block; */
+            /* 行内块级元素 */
+            float: right;
+            background: url(images/earphone.svg)no-repeat center;
+            background-size: 20px;
+            margin-right: 10px;
+        }
+        
+        .music p.music-number span.music-number-txt {
+            height: 35px;
+            /* border: 1px solid red; */
+            /* display: inline-block; */
+            /* 行内块级元素 */
+            float: right;
+            font-size: 14px;
+            color: #fff;
+            line-height: 35px;
+            padding-right: 10px;
+        }
+        
+        .music .music-text {
+            width: 100%;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+        
+        .music .music-text h3 {
+            color: #fff;
+            font-weight: 100;
+            padding: 15px 0px 5px 10px;
+        }
+        
+        .music .music-text p {
+            color: #ddd;
+            padding-left: 10px;
+        }
+        
+        .music .music-mask {
+            /* width: 480px; */
+            /* height: 480px; */
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            display: none;
+        }
+        
+        .music .play-button {
+            width: 36px;
+            height: 36px;
+            background-color: red;
+            position: absolute;
+            bottom: 22px;
+            right: 22px;
+            background: url(images/play-button.svg);
+            display: none;
+        }
+        
+        .music a:hover .music-mask,
+        .music a:hover .play-button {
+            display: block;
+        }
+        /* 遮罩层 */
+    </style>
+</head>
+
+<body>
+    <div class="music">
+        <a href="#">
+            <img src="images/kugou-img1.jpg" alt="" width="480">
+            <p class="music-number">
+                <span class="music-number-txt">679.9万</span>
+                <span class="icon-earphone"></span>
+            </p>
+            <div class="music-text">
+                <h3>乡村之旅：安静惬意，与自然同在</h3>
+                <p>蔓若</p>
+            </div>
+            <div class="music-mask"></div>
+            <div class="play-button"></div>
+        </a>
+    </div>
+</body>
+
+</html>
