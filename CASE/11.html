@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS开发小米商城右侧浮动菜单效果</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <style>
+        body {
+            background-color: #ddd;
+            height: 2000px;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .sidebar {
+            width: 85px;
+            /* height: 500px; */
+            /* background-color: #fff; */
+            position: fixed;
+            right: 20px;
+            bottom: 100px;
+        }
+        
+        .sidebar ul {
+            /* border: 1px solid red; */
+        }
+        
+        .sidebar ul li {
+            border-bottom: 1px solid #ddd;
+            width: 85px;
+            height: 85px;
+            background-color: #fff;
+            position: relative;
+        }
+        
+        .sidebar ul li:last-child {
+            margin-top: 20px;
+        }
+        
+        .sidebar ul li span {
+            width: 85px;
+            height: 50px;
+            /* background-color: aquamarine; */
+            display: block;
+            /* 转换为块级元素 */
+            font-size: 28px;
+            color: #666;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        .sidebar ul li p {
+            font-size: 14px;
+            text-align: center;
+            color: #666;
+        }
+        
+        .sidebar ul li:hover span,
+        .sidebar ul li:hover p {
+            color: hotpink;
+        }
+        
+        .sidebar ul li .wixin {
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            position: absolute;
+            top: 0px;
+            left: -130px;
+            padding: 15px;
+            display: none;
+        }
+        
+        .sidebar ul li:hover .wixin {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul>
+            <li>
+                <span class="iconfont icon-shouji"></span>
+                <p>手机APP</p>
+                <div class="wixin">
+                    <img src="images/wixin.jpg" alt="" width="100">
+                </div>
+            </li>
+            <li>
+                <a href="">
+                    <span class="iconfont icon-touxiang"></span>
+                    <p>个人中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="iconfont icon-gongju"></span>
+                    <p>售后服务</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="iconfont icon-kefu"></span>
+                    <p>人工客服</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="iconfont icon-gouwuche"></span>
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="iconfont icon-dingbu"></span>
+                    <p>回到顶部</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
