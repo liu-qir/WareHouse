@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="pid"></p>
+    <script>
+        function demo(a, b) {
+            // alert("我会执行吗");
+            // return "hello";
+            if (a > b) {
+                return alert("a比较大");
+            } else {
+                return alert("b比较大");
+            }
+
+        }
+        document.getElementById("pid").innerHTML = demo(12, 10);
+        /*var vl1 = demo() + ":iwen";
+        var vl2 = demo() + ":ime";
+        alert(vl1);
+        alert(vl2);*/
+    </script>
+</body>
+
+</html>

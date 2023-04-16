@@ -1,4 +1,4 @@
-{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +15,8 @@ header {
     padding: 15px 100px;
     z-index: 10;
     background: rgb(56, 53, 53);
+    margin: 0;
+    /* opacity: ; */
 }
 
 header .logo {
@@ -30,11 +32,14 @@ header .navigation {
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px 0;
+    /* opacity: 0.5; */
+    text-align: center;
 }
 
 header .navigation li {
     list-style: none;
     margin: 0 20px;
+    /* opacity: 0.5; */
 }
 
 header .navigation li a {
