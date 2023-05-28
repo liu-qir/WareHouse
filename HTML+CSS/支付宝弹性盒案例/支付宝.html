@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 955px;
+            height: 1420px;
+            margin: 0 auto;
+            background: yellow;
+            display: flex;
+            flex-direction: column;
+        }
+        /* header设置 */
+        
+        header {
+            height: 124px;
+            background: #232939;
+            display: flex;
+            color: white;
+        }
+        
+        header .iconfont {
+            width: 130px;
+            height: 160px;
+            line-height: 124px;
+            text-align: center;
+            font-size: 48px;
+        }
+        
+        header span {
+            flex: 1;
+            height: 124px;
+            line-height: 124px;
+            /* text-align: center; */
+            font-size: 40px;
+        }
+        /* footer设置 */
+        
+        footer {
+            height: 128px;
+            background: gray;
+        }
+        /* section设置 */
+        
+        section {
+            flex: 1;
+        }
+        
+        .main {
+            display: flex;
+            height: 278px;
+            background: #232939;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .main div {
+            width: 120px;
+            height: 168px;
+            /* background: red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+        }
+        
+        .main div i {
+            font-size: 110px;
+            text-align: center;
+        }
+        
+        .main div span {
+            font-size: 32px;
+            text-align: center;
+        }
+        
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+        }
+        
+        .list div {
+            width: 25%;
+            height: 208px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*在主轴方向上居中  */
+        }
+        
+        .list div i {
+            /* width: ; */
+            height: 77px;
+            line-height: 77px;
+            text-align: center;
+            font-size: 55px;
+            color: #fbb458;
+        }
+        
+        list .list div span {
+            font-size: 30px;
+            height: 61px;
+            text-align: center;
+            line-height: 61px;
+        }
+        
+        .pic {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <i class="iconfont icon-zhangdan"></i>
+            <span>账单</span>
+            <i class="iconfont icon-31sousuo"></i>
+            <i class=" iconfont icon-jiahao "></i>
+            <i class="iconfont icon-gerentouxiang "></i>
+
+        </header>
+        <section>
+            <div class="main">
+                <div>
+                    <i class="iconfont icon-saoyisao"></i>
+                    <span>扫一扫</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-fukuan"></i>
+                    <span>付款</span></div>
+                <div>
+                    <i class="iconfont icon-qianbao1"></i>
+                    <span>卡券</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-qinmifu"></i>
+                    <span>亲密付</span>
+                </div>
+            </div>
+            <div class="list">
+                <div>
+                    <i class="iconfont icon-jipiao"></i>
+                    <span>信用卡还贷</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-wodexiangmu"></i>
+                    <span>记账本</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-areachart"></i>
+                    <span>股票</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-jisuanqi"></i>
+                    <span>理财小工具</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-taobao"></i>
+                    <span>淘宝</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-youxichongzhi"></i>
+                    <span>游戏充值</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-qinmifu></i>
+                    <span>亲密付</span>
+                </div>
+                <div>
+                    <i class=" iconfont icon-koubei "></i>
+                    <span>口碑外卖</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-jipiao "></i>
+                    <span>阿里旅行</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-travel "></i>
+                    <span>机票火车票</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-shoujichongzhi "></i>
+                    <span>手机充值/span>
+                </div>
+                <div>
+                    <i class="iconfont icon-wodejifenbao "></i>
+                    <span>转账</span>
+                </div>
+                <div>
+                    <i class="iconfont icon-wodejifenbao "></i>
+                    <span>转账</span>
+                </div>
+            </div>
+            <div class="pic ">
+                <img src="1.png " alt=" ">
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <span class="iconfont icon-37 "></span>
+</body>
+
+</html>
